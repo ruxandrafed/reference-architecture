@@ -26,17 +26,17 @@ By writing the test first:
 ## When
 
 - Writing:
- - As stated in `How`, we are recommended to always write unit tests first before functional code, therefore following the [Test Driven Development][TDD] practice
+  - As stated in `How`, we are recommended to always write unit tests first before functional code, therefore following the [Test Driven Development][TDD] practice
 
 - Running:
- - Unit tests are recommended to be executed as part of the pre-commit hook
- - Unit tests are required to be executed as part of the delivery pipeline
+  - Unit tests are recommended to be executed as part of the pre-commit hook
+  - Unit tests are required to be executed as part of the delivery pipeline
 
 ## Standards
 
 ### 1: Coverage as a %
 
-We DO NOT only look at code coverage itself as a %, because enforcing an 100% code coverage can easily lead to "happy path" unit tests and potentially worse code quality. [Don't be fooled by 100% code coverage][Fooled by 100%] has a great explanation on this topic.
+We do not only look at code coverage itself as a %, because enforcing an 100% code coverage can easily lead to "happy path" unit tests and potentially worse code quality. [Don't be fooled by 100% code coverage][Fooled by 100%] has a great explanation on this topic.
 
 Additionally, we look at branch coverage instead of simply line coverage. Because we need to examine that each path of the application's control structure (e.g: if statements) has been executed and covered.
 
