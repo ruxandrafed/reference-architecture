@@ -84,6 +84,7 @@ ie: Given a `Card` that gets wrapped in an HoC, the directory structure should l
 
 - [Magic tricks of unit testing](https://www.youtube.com/watch?v=URSWYvyc42M) _Ruby, but excellent concepts_
 - [Don't be fooled by 100% Code Coverage][Fooled by 100%]
+- [Michael Feathers - The deep synergy between testability and good design](https://www.youtube.com/watch?v=4cVZvoFGJTU) _Great talk on how writing unit tests can help us identify issues with our code architecture_
 
 
 [Starter-kit: unit test]: https://github.com/telusdigital/telus-isomorphic-starter-kit/blob/master/DOCKER.md#unit-testing
