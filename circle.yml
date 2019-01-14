@@ -29,6 +29,12 @@ jobs:
       - attach
       - run: npm run lint
 
+  release:
+    executor: app
+    steps:
+      - attach
+      - run: npx semantic-release
+
 workflows:
   version: 2
   run:
@@ -36,3 +42,10 @@ workflows:
       - build
       - lint:
           requires: [ build ]
+
+      - release:
+          context: npm-library
+          requires: [ build, lint ]
+          filters:
+            branches:
+              only: master
